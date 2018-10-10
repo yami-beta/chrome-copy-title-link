@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title></title>
+  <style>
+    html,body {
+      margin: 0;
+      padding: 0;
+    }
+    #root {
+      display: flex;
+      flex-flow: column;
+      align-items: flex-end;
+      box-sizing: border-box;
+      padding: 10px;
+    }
+    .copyTarget {
+      max-width: 100%;
+      white-space: nowrap;
+      line-height: 1.5;
+      border: 1px solid rgba(0,0,0,.24);
+      border-radius: 4px;
+    }
+    .copyButtonWrapper {
+      padding: 10px 0 0;
+    }
+    .copyButton {
+      display: block;
+      box-sizing: border-box;
+      flex: 0 0 auto;
+    }
+  </style>
+</head>
+<body>
+  <div id="root">
+    <textarea class="copyTarget" rows="1" cols="80"></textarea>
+    <div class="copyButtonWrapper">
+      <button class="copyButton" type="button">copy</button>
+    </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
