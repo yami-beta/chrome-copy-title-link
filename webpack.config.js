@@ -1,6 +1,7 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
+const CleanWebpackPlugin = require("clean-webpack-plugin");
 
 module.exports = (env, argv) => {
   const { mode } = argv;
@@ -27,6 +28,7 @@ module.exports = (env, argv) => {
       ]
     },
     plugins: [
+      new CleanWebpackPlugin(["dist"]),
       new HtmlWebpackPlugin({
         template: path.join(__dirname, "src", "index.html")
       }),
@@ -36,8 +38,8 @@ module.exports = (env, argv) => {
           to: "./"
         },
         {
-          from: "src/icon.png",
-          to: "./"
+          from: "src/images/",
+          to: "./images/"
         }
       ])
     ],
