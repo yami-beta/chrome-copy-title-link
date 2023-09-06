@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Copy Page Title to Clipboard",
+  "description": "Show popup for copy page's title to clipboard as link",
+  "version": "0.3.0",
+  "icons": {
+    "16": "src/images/icon_16.png",
+    "48": "src/images/icon_48.png",
+    "128": "src/images/icon_128.png"
+  },
+  "action": { "default_popup": "index.html" },
+  "permissions": ["tabs", "activeTab"]
+}
