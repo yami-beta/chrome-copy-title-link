@@ -1,8 +1,23 @@
 {
   "name": "chrome-copy-title-link",
-  "version": "0.2.0",
-  "main": "index.js",
-  "author": "yami-beta <yami-beta@users.noreply.github.com>",
-  "license": "MIT",
-  "private": true
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "lint": "prettier --check .",
+    "format": "prettier --write ."
+  },
+  "dependencies": {
+    "lit": "^2.7.6"
+  },
+  "devDependencies": {
+    "@crxjs/vite-plugin": "2.0.0-beta.18",
+    "@types/chrome": "^0.0.245",
+    "prettier": "^3.0.3",
+    "typescript": "^5.0.2",
+    "vite": "^4.4.5"
+  }
 }
